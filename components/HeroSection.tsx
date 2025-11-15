@@ -232,7 +232,7 @@ export default function HeroSectionWithWaves() {
                 </span>
               <br />
               <span className="bg-gradient-to-r from-primary via-primary to-primary/60 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-                Own Your AI Model, No Code Required
+                Own Your AI Model
               </span>
             </h1>
 
