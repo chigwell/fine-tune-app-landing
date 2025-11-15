@@ -44,10 +44,10 @@ const partnerLogos: PartnerLogo[] = [
   },
   {
     id: "7",
-    name: "FastAPI",
-    logoLight: "/logos/idCFFrGr_W_logos.jpeg",
-    logoDark: "/logos/idCFFrGr_W_logos.jpeg",
-    url: "https://nebius.ai"
+    name: "google-ai-studio",
+    logoLight: "/logos/google-gemini-icon.svg",
+    logoDark: "/logos/google-gemini-icon.svg",
+    url: "https://aistudio.google.com/"
   },
   {
     id: "8",
