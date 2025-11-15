@@ -16,10 +16,10 @@ interface PartnerLogo {
 const partnerLogos: PartnerLogo[] = [
   {
     id: "1",
-    name: "Azure",
-    logoLight: "/logos/azure-color.svg",
-    logoDark: "/logos/azure-color.svg",
-    url: "https://azure.microsoft.com/en-us/products/ai-foundry/models/"
+    name: "React",
+    logoLight: "/logos/React-icon.svg.png",
+    logoDark: "/logos/React-icon.svg.png",
+    url: "https://react.dev/"
   },
   {
     id: "2",
@@ -37,24 +37,24 @@ const partnerLogos: PartnerLogo[] = [
   },
   {
     id: "6",
-    name: "Mistral AI",
-    logoLight: "/logos/MistralAI-light.svg",
-    logoDark: "/logos/MistralAI-light.svg",
-    url: "https://www.mistral.ai/"
+    name: "Docker",
+    logoLight: "/logos/62a9c7c08ff6441a2952dad3.png",
+    logoDark: "/logos/62a9c7c08ff6441a2952dad3.png",
+    url: "https://www.docker.com/"
   },
   {
     id: "7",
-    name: "Nebius",
+    name: "FastAPI",
     logoLight: "/logos/idCFFrGr_W_logos.jpeg",
     logoDark: "/logos/idCFFrGr_W_logos.jpeg",
     url: "https://nebius.ai"
   },
   {
     id: "8",
-    name: "Nebula Block",
-    logoLight: "/logos/nebula-block.png",
-    logoDark: "/logos/nebula-block.png",
-    url: "https://www.nebulablock.com/"
+    name: "FastAPI",
+    logoLight: "/logos/Fastapi-Icon--Streamline-Svg-Logos.svg",
+    logoDark: "/logos/Fastapi-Icon--Streamline-Svg-Logos.svg",
+    url: "https://fastapi.tiangolo.com/"
   },
   {
     id: "9",
@@ -62,20 +62,6 @@ const partnerLogos: PartnerLogo[] = [
     logoLight: "/logos/ollama.svg",
     logoDark: "/logos/ollama.webp",
     url: "https://ollama.com"
-  },
-  {
-    id: "10",
-    name: "OpenAI",
-    logoLight: "/logos/OpenAI-light.svg",
-    logoDark: "/logos/OpenAI_Symbol_0.svg",
-    url: "https://www.openai.com/"
-  },
-  {
-    id: "12",
-    name: "Scaleway",
-    logoLight: "/logos/Scaleway_id_RaUxAYi_0.svg",
-    logoDark: "/logos/Scaleway_id_RaUxAYi_0.svg",
-    url: "https://www.scaleway.com/en/"
   },
 ];
 
