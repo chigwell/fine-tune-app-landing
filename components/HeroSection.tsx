@@ -287,6 +287,31 @@ export default function HeroSectionWithWaves() {
             </div>
           </div>
 
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-12 md:mb-20 px-4">
+            <Button
+              size="lg"
+              className="w-full sm:w-auto px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-semibold"
+              asChild
+            >
+              <Link href="https://dash.fine-tune.app/">
+                Go to Dashboard
+                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2" />
+              </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-semibold backdrop-blur-sm"
+              asChild
+            >
+              <Link href="#example">
+                Example
+              </Link>
+            </Button>
+          </div>
+
         </div>
       </div>
     </section>
