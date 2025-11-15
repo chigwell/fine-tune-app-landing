@@ -1,7 +1,6 @@
 import Installation from "@/components/Installation";
 import Introduction from "@/components/Introduction";
 import StoryBehind from "@/components/StoryBehind";
-import Changelog from "@/components/ChangeLog";
 import TextDecryptionShowcase, {
   TextDecryptionTheme,
 } from "@/components/vui/text/TextDecryption";
@@ -85,14 +84,6 @@ export const componentMap: ComponentCategoryMap = {
       path: undefined,
       description:
         "💡 <b>The Journey</b> - Discover the inspiration and vision behind VUI. Learn about our commitment to <b>developer experience</b> and <b>design excellence</b>.",
-    },
-    {
-      name: "Changelog",
-      component: Changelog,
-      route: "/get-started/changelog",
-      path: undefined,
-      description:
-        "📝 <b>Release Notes</b> - Stay updated with the latest features, improvements, and bug fixes. Track our progress with <b>semantic versioning</b> and detailed change logs.",
     },
   ],
   "AI Components": [
