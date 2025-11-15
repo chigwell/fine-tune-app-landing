@@ -1,5 +1,9 @@
 # fine-tune.app Landing Page
 
+Live demo: https://fine-tune.app/
+
+![Landing screenshot](./public/Screenshot%202025-11-15%20at%2014.13.36.png)
+
 ```
 npm install
 npm run dev
