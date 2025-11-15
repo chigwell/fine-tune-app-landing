@@ -109,10 +109,10 @@ export default function PartnerLogosTicker() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-            It works, thanks to
+            Powered by an Incredible Tech Ecosystem
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            It works, thanks to
+            Fine-tune.app is proud to build upon the innovations of these leading open-source projects and platforms.
           </p>
         </div>
 
