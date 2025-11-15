@@ -1,36 +1,25 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface DisclaimerProps {
-  /**
-   * The disclaimer text to display
-   */
   text?: string;
-  /**
-   * Duration in milliseconds to show the skeleton before revealing text
-   */
   loadingDuration?: number;
-  /**
-   * Additional class names for the disclaimer container
-   */
   className?: string;
-  /**
-   * Maximum width of the disclaimer
-   */
   maxWidth?: string;
 }
 
 /**
  * A centered disclaimer component with skeleton loading effect
+ * for fine-tune.app / dash.fine-tune.app
  */
 export default function Disclaimer({
-  text = "This is a disclaimer message. By using this service, you agree to our terms and conditions. Please read carefully before proceeding.",
+  text,
   loadingDuration = 2000,
   className,
-  maxWidth = "max-w-3xl", // Changed from max-w-2xl to match the chart component
+  maxWidth = "max-w-3xl",
 }: DisclaimerProps) {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -65,7 +54,7 @@ export default function Disclaimer({
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-                <div className="h-6 bg-gray-300 rounded w-3/4 animate-pulse"></div>
+              <div className="h-6 bg-gray-300 rounded w-3/4 animate-pulse" />
             </motion.div>
           ) : (
             <motion.div
@@ -76,31 +65,47 @@ export default function Disclaimer({
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-xl font-semibold text-foreground">Disclaimer</h2>
+              <h2 className="text-xl font-semibold text-foreground">
+                Disclaimer
+              </h2>
               <div className="mt-8 px-4 max-w-2xl text-gray-700 text-sm text-center">
                 <p className="text-justify">
-                  ...
+                  <b>fine-tune.app</b> (including{" "}
+                  <code>dash.fine-tune.app</code> and{" "}
+                  <code>api.fine-tune.app</code>) is an experimental MVP built
+                  for the Google London Hackathon on{" "}
+                  <b>15&nbsp;November&nbsp;2025</b>. It is a prototype and not a
+                  production-ready service.
                 </p>
-                <p className="mt-2">
-                  For more details, please see our{" "}
-                  <a
-                    href="https://github.com/chigwell/fine-tune-app/blob/main/TERMS.md"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 underline"
-                  >
-                    Terms
-                  </a>{" "}
-                  and{" "}
-                  <a
-                    href="https://github.com/chigwell/fine-tune-app/blob/main/PRIVACY.md"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800 underline"
-                  >
-                    Privacy Policy
-                  </a>.
+                <p className="text-justify">
+                  Functionality, limits, and behaviour may change at any time,
+                  or the service may be modified, interrupted, or shut down
+                  without notice. Data may be lost, jobs may fail, and models or
+                  artefacts may be removed at any point.
                 </p>
+                <p className="text-justify">
+                  This tool helps you orchestrate fine-tuning workflows, but{" "}
+                  <b>you are fully responsible</b> for all data, prompts,
+                  configuration, model choices, and outputs. You must check and
+                  validate everything before using it in any real product,
+                  workflow, or decision-making.
+                </p>
+                <p className="text-justify">
+                  No guarantees are provided regarding correctness, safety,
+                  fitness for a particular purpose, or availability of any model
+                  or endpoint. Costs and usage of external providers (e.g. GPU
+                  time, API calls, storage) remain entirely your responsibility.
+                </p>
+                <p className="text-justify">
+                  By using this MVP, you acknowledge that you do so{" "}
+                  <b>at your own risk</b>, that the authors and contributors are
+                  not liable for any losses, damages, or issues arising from its
+                  use, and that you will not rely on it as a critical or
+                  primary system in any environment.
+                </p>
+                {text && (
+                  <p className="text-justify mt-2 opacity-80">{text}</p>
+                )}
               </div>
             </motion.div>
           )}
@@ -109,3 +114,4 @@ export default function Disclaimer({
     </div>
   );
 }
+
