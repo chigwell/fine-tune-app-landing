@@ -235,6 +235,8 @@ export default function Footer() {
                 <span>Cloudflare</span>
                 <span className="hidden sm:inline">•</span>
                 <span>Ollama</span>
+                <span className="hidden sm:inline">•</span>
+                <span>Vyomaui</span>
               </div>
             </div>
           </div>
