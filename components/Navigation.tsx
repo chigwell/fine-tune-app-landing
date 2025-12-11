@@ -45,6 +45,10 @@ async function getGitHubStars(): Promise<number> {
 
 export default function Navigation() {
   const navItems = [
+    {
+      name: "Dashboard",
+      link: "https://dash.fine-tune.app",
+    },
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
