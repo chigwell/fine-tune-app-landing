@@ -44,8 +44,7 @@ async function getGitHubStars(): Promise<number> {
 }
 
 export default function Navigation() {
-  const navItems = [
-  ];
+  const navItems = [];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [stars, setStars] = useState<number | null>(null);
