@@ -32,7 +32,7 @@ export default function Disclaimer({
   }, [loadingDuration]);
 
   return (
-    <div className="flex items-center justify-center min-h-screen p-4">
+    <div className="flex items-center justify-center py-16 md:py-24 px-4">
       <motion.div
         className={cn(
           "w-full",
@@ -72,16 +72,18 @@ export default function Disclaimer({
                 <p className="text-justify">
                   <b>fine-tune.app</b> (including{" "}
                   <code>dash.fine-tune.app</code> and{" "}
-                  <code>api.fine-tune.app</code>) is an experimental MVP built
-                  for the Google London Hackathon on{" "}
-                  <b>15&nbsp;November&nbsp;2025</b>. It is a prototype and not a
-                  production-ready service.
+                  <code>api.fine-tune.app</code>) provides a dashboard and API
+                  for fine-tuning smaller models and exporting them (e.g. GGUF)
+                  for your own use. It is intended for experimentation,
+                  development, and research—not for safety-critical or
+                  life-critical use.
                 </p>
                 <p className="text-justify">
                   Functionality, limits, and behaviour may change at any time,
                   or the service may be modified, interrupted, or shut down
                   without notice. Data may be lost, jobs may fail, and models or
-                  artefacts may be removed at any point.
+                  artefacts may be removed at any point; keep backups of
+                  anything important.
                 </p>
                 <p className="text-justify">
                   This tool helps you orchestrate fine-tuning workflows, but{" "}
@@ -97,11 +99,19 @@ export default function Disclaimer({
                   time, API calls, storage) remain entirely your responsibility.
                 </p>
                 <p className="text-justify">
-                  By using this MVP, you acknowledge that you do so{" "}
-                  <b>at your own risk</b>, that the authors and contributors are
-                  not liable for any losses, damages, or issues arising from its
-                  use, and that you will not rely on it as a critical or
-                  primary system in any environment.
+                  By using the Service, you acknowledge that you do so{" "}
+                  <b>at your own risk</b>, and that the operators and
+                  contributors are not liable for losses, damages, or issues
+                  arising from its use. See the{" "}
+                  <a
+                    className="text-foreground hover:text-primary font-semibold underline-offset-4 hover:underline"
+                    href="https://github.com/chigwell/fine-tune-app/blob/main/TERMS.md"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Terms of Service
+                  </a>{" "}
+                  (Last updated: 11 December 2025) for full details.
                 </p>
                 {text && (
                   <p className="text-justify mt-2 opacity-80">{text}</p>
