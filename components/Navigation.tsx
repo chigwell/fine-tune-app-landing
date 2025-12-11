@@ -99,6 +99,20 @@ export default function Navigation() {
           isOpen={isMobileMenuOpen}
           onClose={() => setIsMobileMenuOpen(false)}
         >
+          {navItems.map((item, idx) => (
+            <Link
+              key={`mobile-link-${idx}`}
+              href={item.link}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="relative text-neutral-600 dark:text-neutral-300 hover:text-foreground transition-colors"
+              target={item.link.startsWith("http") ? "_blank" : undefined}
+              rel={
+                item.link.startsWith("http") ? "noopener noreferrer" : undefined
+              }
+            >
+              <span className="block">{item.name}</span>
+            </Link>
+          ))}
           <div className="flex w-full flex-col gap-4 mt-6">
           <Link
               href="https://github.com/chigwell/fine-tune-app"
