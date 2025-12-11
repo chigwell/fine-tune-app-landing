@@ -223,7 +223,7 @@ export default function HeroSectionWithWaves() {
               status="active"
               className="mb-6 md:mb-8 bg-background/50 backdrop-blur-sm text-xs md:text-sm text-muted-foreground"
             >
-              {`Fine-tune.app: Now with No-Code Model Ownership`}
+              {`Fine-tune.app: Guided, JSONL-first fine-tuning`}
             </Pill>
 
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9] px-2">
@@ -240,16 +240,8 @@ export default function HeroSectionWithWaves() {
               className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4"
               style={{ marginBottom: "0" }}
             >
-              Easily fine-tune and own 270M parameter models with our intuitive, no-code platform.
-              <span className="text-foreground font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text">
-                {" "}
-              </span>
-              <span className="text-foreground font-semibold bg-gradient-to-r from-secondary to-primary bg-clip-text">
-                {" "}
-              </span>
-              <span className="text-foreground font-semibold bg-gradient-to-r from-secondary to-primary bg-clip-text">
-                {" "}
-              </span>
+              Fine-tune and own 270M parameter models using your JSONL training
+              files—no code required, just upload, configure, and run.
             </p>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
               Create a specialized AI asset for your business in just a few clicks.
@@ -261,10 +253,10 @@ export default function HeroSectionWithWaves() {
             <div className="p-4 md:p-6 rounded-2xl border bg-card/50 backdrop-blur-sm">
               <Layers className="w-6 h-6 md:w-8 md:h-8 text-primary mx-auto mb-3 md:mb-4" />
               <h3 className="font-semibold mb-2 text-sm md:text-base">
-                No-Code Fine-Tuning
+                JSONL Uploads, No Code
               </h3>
               <p className="text-xs md:text-sm text-muted-foreground">
-                Upload your data and fine-tune a 270M model through a simple interface. No coding skills needed.
+                Upload instruction/response JSONL files and fine-tune a 270M model through a guided UI. No scripts or notebooks needed.
               </p>
             </div>
             <div className="p-4 md:p-6 rounded-2xl border bg-card/50 backdrop-blur-sm">
