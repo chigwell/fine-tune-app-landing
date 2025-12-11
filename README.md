@@ -8,5 +8,5 @@ Live demo: https://fine-tune.app/
 npm install
 npm run dev
 npm run build
-npx wrangler pages deploy build --project-name=fine-tune-app --branch=main
+npx wrangler pages deploy build --project-name=fine-tune-app-landing --branch=main
 ```
