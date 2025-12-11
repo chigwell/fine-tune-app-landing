@@ -81,7 +81,9 @@ export default function PartnerLogosTicker() {
   const duplicatedLogos = [...partnerLogos, ...partnerLogos];
 
   // Theme-based styling
-  const tickerBg = isDarkTheme ? "bg-slate-900/50" : "bg-white/50";
+  const tickerBg = isDarkTheme
+    ? "bg-gradient-to-r from-[#0b1437] via-[#111c44]/80 to-[#0b1437] border-y border-border/50"
+    : "bg-gradient-to-r from-[#f8f9fa] via-[#e9ecef]/80 to-[#f8f9fa] border-y border-border/70";
 
   // Don't render until mounted to avoid hydration mismatch
   if (!mounted) {

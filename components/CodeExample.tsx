@@ -87,11 +87,11 @@ export default function ConsoleAnimation() {
       </div>
     <div  className="relative group flex items-center justify-center py-6 sm:py-10">
       <pre style={{ minHeight: '320px', maxWidth: '768px' }}
-          className="bg-gray-800 text-white p-2 md:p-4 rounded-lg shadow-md font-mono overflow-x-auto text-xs md:text-sm w-full max-w-4xl mx-4">
+          className="bg-gradient-to-br from-[#0b1437] via-[#111c44] to-[#0b1437] text-[#e9ecef] p-2 md:p-4 rounded-2xl shadow-xl border border-[#3D9AC6]/30 font-mono overflow-x-auto text-xs md:text-sm w-full max-w-4xl mx-4">
         {lines.join('\n')}
         {lines.length > 0 && '\n'}
         {currentText}
-        <span className="animate-pulse">█</span>
+        <span className="animate-pulse text-[#83CEF2]">█</span>
       </pre>
     </div>
     </>

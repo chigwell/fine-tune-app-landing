@@ -87,9 +87,9 @@ export default function HeroSectionWithWaves() {
 
     // Layers can be tweaked for dark/light theme if needed
     const layers = [
-      { color: new THREE.Color("#26c9f7"), size: isMobile ? 0.6 : 0.8, depth: 100 },
-      { color: new THREE.Color("#1467cd"), size: isMobile ? 0.5 : 0.6, depth: 150 },
-      { color: new THREE.Color("#1f33b9"), size: isMobile ? 0.4 : 0.5, depth: 200 },
+      { color: new THREE.Color("#83CEF2"), size: isMobile ? 0.6 : 0.8, depth: 100 },
+      { color: new THREE.Color("#5EB6E0"), size: isMobile ? 0.5 : 0.6, depth: 150 },
+      { color: new THREE.Color("#3D9AC6"), size: isMobile ? 0.4 : 0.5, depth: 200 },
     ];
 
     const particleGroups: THREE.Points[] = [];
@@ -184,12 +184,12 @@ export default function HeroSectionWithWaves() {
 
   // Theme-based fallback background
   const fallbackBackground = isDarkTheme
-    ? "bg-gradient-to-br from-slate-900 to-slate-800"
-    : "bg-gradient-to-br from-white to-gray-100";
+    ? "bg-gradient-to-br from-[#0b1437] via-[#111c44] to-[#0b1437]"
+    : "bg-gradient-to-br from-[#f8f9fa] via-[#e9ecef] to-[#f8f9fa]";
 
   const loadingIndicatorColor = isDarkTheme
-    ? "border-white"
-    : "border-gray-800";
+    ? "border-[#83CEF2]"
+    : "border-[#3D9AC6]";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden -mt-16 md:-mt-20">
@@ -227,11 +227,11 @@ export default function HeroSectionWithWaves() {
             </Pill>
 
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight leading-[0.9] px-2">
-              <span className="bg-gradient-to-r from-[#26c9f7] via-[#1467cd] to-[#1f33b9] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#83CEF2] via-[#5EB6E0] to-[#3D9AC6] bg-clip-text text-transparent">
                   Fine-tune.app
                 </span>
               <br />
-              <span className="bg-gradient-to-r from-primary via-primary to-primary/60 bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+              <span className="bg-gradient-to-r from-[#5EB6E0] via-[#3D9AC6] to-[#1B254B] bg-clip-text text-transparent text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 Own Your AI Model
               </span>
             </h1>

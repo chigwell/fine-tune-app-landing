@@ -54,7 +54,7 @@ export default function Disclaimer({
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="h-6 bg-gray-300 rounded w-3/4 animate-pulse" />
+              <div className="h-6 bg-[#cbd5e0] rounded w-3/4 animate-pulse" />
             </motion.div>
           ) : (
             <motion.div
@@ -65,10 +65,10 @@ export default function Disclaimer({
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="text-xl font-semibold text-foreground">
+              <h2 className="text-xl font-semibold bg-gradient-to-r from-[#3D9AC6] via-[#5EB6E0] to-[#83CEF2] bg-clip-text text-transparent">
                 Disclaimer
               </h2>
-              <div className="mt-8 px-4 max-w-2xl text-gray-700 text-sm text-center">
+              <div className="mt-8 px-4 max-w-2xl text-muted-foreground text-sm text-center leading-relaxed">
                 <p className="text-justify">
                   <b>fine-tune.app</b> (including{" "}
                   <code>dash.fine-tune.app</code> and{" "}
@@ -114,4 +114,3 @@ export default function Disclaimer({
     </div>
   );
 }
-

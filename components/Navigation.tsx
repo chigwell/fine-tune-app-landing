@@ -16,8 +16,7 @@ import { Star } from "lucide-react";
 
 async function getGitHubStars(): Promise<number> {
   try {
-    // Make the API call
-    const response = await fetch("", {
+    const response = await fetch("https://api.github.com/repos/chigwell/fine-tune-app", {
       headers: {
         Accept: "application/vnd.github+json",
       },
@@ -31,13 +30,14 @@ async function getGitHubStars(): Promise<number> {
       throw new Error("Failed to fetch GitHub stars");
     }
 
-    // Parse the JSON response
-    const data = await response.json();
+    const contentType = response.headers.get("content-type") || "";
+    if (!contentType.includes("application/json")) {
+      throw new Error(`Unexpected content type: ${contentType}`);
+    }
 
-    // Return just the star count
-    return data.stars;
+    const data = await response.json();
+    return typeof data.stargazers_count === "number" ? data.stargazers_count : 0;
   } catch (error) {
-    // If anything fails, log it and return 0
     console.error("Error fetching GitHub stars:", error);
     return 5;
   }
