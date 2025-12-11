@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import Navigation from "@/components/Navigation";
 import PartnerLogosTicker from "@/components/PartnerLogosTicker";
 import Disclaimer from "@/components/Disclaimer";
-//import ConsoleAnimation from "@/components/CodeExample";
+import ConsoleAnimation from "@/components/CodeExample";
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <PartnerLogosTicker />
+      <ConsoleAnimation />
       <Disclaimer/>
       <Footer />
     </>
