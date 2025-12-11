@@ -351,7 +351,7 @@ export default function SidebarComponent({ children }: SidebarComponentProps) {
               >
                 <div className="flex aspect-square size-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 group-hover:border-primary/30 transition-all duration-200">
                   <Image
-                    src={"/FT.png"}
+                    src={"/logo.png"}
                     alt="LLM7 Logo"
                     width={32}
                     height={32}

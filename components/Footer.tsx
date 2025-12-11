@@ -27,7 +27,7 @@ export default function Footer() {
           {/* Brand section */}
           <div className="sm:col-span-2 space-y-4 md:space-y-6">
             <Link href="/" className="flex items-center gap-2 md:gap-3 group">
-              <img src="/FT.png" alt="fine-tune.app Logo" className="w-8 h-8 md:w-10 md:h-10" />
+              <img src="/logo.png" alt="fine-tune.app Logo" className="w-8 h-8 md:w-10 md:h-10" />
               <div>
                 <h2 className="text-xl md:text-2xl font-bold">fine-tune.app</h2>
                 <p className="text-xs md:text-sm text-muted-foreground">

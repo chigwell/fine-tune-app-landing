@@ -318,7 +318,7 @@ export const NavbarLogo = () => {
       >
         <div className="h-10 w-10 rounded-lg flex items-center justify-center shadow-lg">
           <Image
-            src="/FT.png"
+            src="/logo.png"
             alt="fine-tune.app"
             width={40}
             height={40}

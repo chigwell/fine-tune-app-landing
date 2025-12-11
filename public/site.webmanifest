@@ -1,6 +1,6 @@
 {
-  "name": "fine-tune.app",
-  "short_name": "fine-tune.app",
+  "name": "Fine-tune.app",
+  "short_name": "Fine-tune",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
