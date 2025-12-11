@@ -320,15 +320,15 @@ export const NavbarLogo = () => {
           <Image
             src="/logo.png"
             alt="fine-tune.app"
-            width={40}
-            height={40}
+            width={30}
+            height={30}
             priority
             quality={100}
           />
         </div>
       </motion.div>
       <span className="text-lg font-semibold text-neutral-800 dark:text-white">
-        fine-tune.app
+        Fine-tune.app
       </span>
     </motion.a>
   );
