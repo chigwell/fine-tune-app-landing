@@ -2,7 +2,6 @@
 import {
   Navbar,
   NavBody,
-  NavItems,
   MobileNav,
   NavbarLogo,
   MobileNavHeader,
@@ -44,8 +43,6 @@ async function getGitHubStars(): Promise<number> {
 }
 
 export default function Navigation() {
-  const navItems = [];
-
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [stars, setStars] = useState<number | null>(null);
   const formatStarCount = (count: number): string => {
@@ -64,7 +61,6 @@ export default function Navigation() {
       {/* Desktop Navigation */}
       <NavBody>
         <NavbarLogo />
-        <NavItems items={navItems} />
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <Link
