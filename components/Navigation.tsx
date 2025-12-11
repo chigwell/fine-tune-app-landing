@@ -80,7 +80,7 @@ export default function Navigation() {
               href="https://github.com/chigwell/fine-tune-app"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#5EB6E0]/50 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-[#3D9AC6] hover:text-white hover:border-transparent h-9 px-4 py-2"
             >
               <Star className="w-4 h-4 mr-2 fill-current" />
               {stars !== null ? (
@@ -132,7 +132,7 @@ export default function Navigation() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 w-full"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#5EB6E0]/50 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-[#3D9AC6] hover:text-white hover:border-transparent h-9 px-4 py-2 w-full"
             >
               <Star className="w-4 h-4 mr-2 fill-current" />
               {stars !== null ? (
