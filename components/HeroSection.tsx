@@ -292,6 +292,16 @@ export default function HeroSectionWithWaves() {
                 <ArrowRight className="w-4 h-4 md:w-5 md:h-5 ml-2" />
               </Link>
             </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="w-full sm:w-auto px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-semibold backdrop-blur-sm"
+              asChild
+            >
+              <Link href="#example">
+                Example
+              </Link>
+            </Button>
           </div>
 
         </div>

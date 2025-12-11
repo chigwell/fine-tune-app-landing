@@ -46,6 +46,10 @@ async function getGitHubStars(): Promise<number> {
 export default function Navigation() {
   const navItems = [
     {
+      name: "Example",
+      link: "#example",
+    },
+    {
       name: "Dashboard",
       link: "https://dash.fine-tune.app",
     },

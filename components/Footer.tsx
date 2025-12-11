@@ -126,6 +126,14 @@ export default function Footer() {
             <ul className="space-y-2 md:space-y-3 text-sm">
                 <li>
                 <Link
+                    href="#example"
+                    className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                    Example
+                </Link>
+                </li>
+                <li>
+                <Link
                     href="https://dash.fine-tune.app"
                     className="text-muted-foreground hover:text-foreground transition-colors"
                 >
